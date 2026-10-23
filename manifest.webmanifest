@@ -1,0 +1,19 @@
+{
+  "name": "اعتراض دارم! — بازی دادگاه",
+  "short_name": "اعتراض دارم!",
+  "description": "بازی ماجرایی دادگاه به فارسی بر پایه‌ی قوانین واقعی ایران؛ آفلاین و بدون تبلیغ.",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#140d24",
+  "theme_color": "#140d24",
+  "categories": ["games", "education"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

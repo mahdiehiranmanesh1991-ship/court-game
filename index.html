@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#140d24">
+<meta name="description" content="اعتراض دارم! — بازی ماجرایی دادگاه به فارسی بر پایه‌ی قوانین واقعی ایران. تحقیق کنید، مدرک جمع کنید، شاهد را بازجویی کنید و تناقض را رو کنید. آفلاین و بدون تبلیغ.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="اعتراض دارم!">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preload" href="fonts/Vazirmatn-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/app.css">
+<title>اعتراض دارم! — بازی دادگاه</title>
+</head>
+<body>
+<div id="app">
+  <section class="screen" id="scr-home" data-testid="home"></section>
+  <section class="screen" id="scr-cases" data-testid="cases"></section>
+  <section class="screen" id="scr-game" data-testid="game">
+    <div class="topbar">
+      <button class="icon-btn" id="btnMenu" data-testid="btn-menu" aria-label="منو">☰</button>
+      <div class="hearts" id="hearts" data-testid="hearts" aria-label="اعتبار"></div>
+      <div class="ttl" id="gameTitle"></div>
+      <button class="icon-btn wide" id="btnRecord" data-testid="btn-record">📁 <span>پرونده</span></button>
+    </div>
+    <div class="stage" id="stage" data-testid="stage">
+      <div class="bgwrap" id="bgwrap"></div>
+      <div class="char" id="char"></div>
+      <div class="deskwrap" id="deskwrap"></div>
+      <div class="place" id="place"></div>
+      <div class="flash" id="flash"></div>
+      <div class="banner" id="banner" aria-live="assertive"></div>
+    </div>
+    <div class="lower">
+      <div class="panel" id="panel" data-testid="panel"></div>
+      <div class="dlg" id="dlg" data-testid="dlg" hidden>
+        <div class="nm" id="dlgName"></div>
+        <div class="tx" id="dlgText" aria-live="polite"></div>
+        <div class="more" aria-hidden="true">▼</div>
+      </div>
+    </div>
+  </section>
+  <section class="screen" id="scr-verdict" data-testid="verdict"></section>
+  <section class="screen" id="scr-lesson" data-testid="lesson"></section>
+</div>
+<div class="modal" id="modal" hidden><div class="sheet" id="sheet" role="dialog" aria-modal="true"></div></div>
+<div class="toast" id="toast" role="status" hidden></div>
+<div class="blocker" id="blocker" hidden></div>
+<noscript>برای اجرای بازی باید جاوااسکریپت فعال باشد.</noscript>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
